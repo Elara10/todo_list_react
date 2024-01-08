@@ -1,10 +1,16 @@
 import React from 'react'
+import TodoItem from "../MyComponents/TodoItem";
 
-const Todos = () => {
+
+const Todos = (props) => {
   return (
-    <div>
-      Todos Works!
+   
+    <div className="container">
+     <h3>Todos List</h3>
+    <TodoItem todo={props.todos[0]}/>
+
     </div>
+    
   )
 }
 
