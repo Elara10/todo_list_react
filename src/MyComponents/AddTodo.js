@@ -9,7 +9,11 @@ import React, {useState} from 'react';
         {
             alert("Title or description cannot be blank");
         }
+        else{
        props.addTodo(title,desc);
+       setTitle("");
+       setDesc("");
+        }
     }
   return (
     <div className="container my-3">
